@@ -1,0 +1,7 @@
+$custom-colors: (
+      "grey-dark": #333333,
+      "grey-light": #999,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+

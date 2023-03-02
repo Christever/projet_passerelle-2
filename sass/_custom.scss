@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+html, body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+body {
+  background-image: url('../images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+input[type="email"], input[type="password"] {
+  padding: 15px;
+  font-size: 1em;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+section {
+  background: rgba(153, 153, 153, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+// Les classes
+
+.img_card {
+  height: 200px;
+}
+// Les ID
+
+.form-body {
+  width: 600px;
+  margin: auto;
+  padding: 50px;
+  border-radius: 10px;
+  //background-color: rgba(132, 210, 197, 0.4);
+}
+
+
+.custom-file-button input[type=file]::-webkit-file-upload-button {
+  display: none;
+}
+#view-404 {
+  background-image: url("../../public/images/404.jpg");
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
