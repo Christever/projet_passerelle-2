@@ -15,7 +15,7 @@ ob_start();
                 <img class="card-img-top img_card" src="<?=$photo;?>" alt="Image d'une recette">
 
                 <div class="card-body">
-                    <h5 class="card-title"><?=$recip["title"]?></h5>
+                    <span class="card-title h5"><?=$recip["title"]?></span>
                     <p class="card-text">
                     <ul>
                         <li><span class="fw-bold">Niveau : </span><?=$recip["niveau"]?></li>
