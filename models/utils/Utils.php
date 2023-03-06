@@ -19,7 +19,7 @@ class Utils {
             if ($_FILES['image']['size'] <= 3000000){
                 $information    = pathinfo($_FILES["image"]["name"]);
                 $extentionImg   = $information["extension"];
-                $extArray       = ["png", "gif", "jpg", "jpeg"];
+                $extArray       = ["png", "gif", "jpg", "jpeg", "webp"];
 
                 if (in_array($extentionImg, $extArray)){
                     Utils::$newImage = time().rand().rand().".".$extentionImg;
