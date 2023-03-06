@@ -5,11 +5,7 @@
         <!-- Navbar brand -->
 
         <!-- Toggle button -->
-        <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarMenu"
-        >
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -27,7 +23,7 @@
                     <a class="nav-link text-white fw-bold fs-4 " href="plats">Les plats</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white fw-bold fs-4"  href="desserts">Les desserts</a>
+                    <a class="nav-link text-white fw-bold fs-4" href="desserts">Les desserts</a>
                 </li>
 
                 <?php
@@ -38,26 +34,27 @@
                     if (isset($_SESSION["role"]) && $_SESSION["role"] === "administrateur")
                     {
                     ?>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white fw-bold fs-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Administration
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-black" href="admin">Page d'administration</a></li>
-                                <li><a class="dropdown-item text-black" href="adminRecettes">Gestion des recettes</a></li>
-                                <li><a class="dropdown-item text-black" href="adminUsers">Gestion des utilisateurs</a></li>
-                            </ul>
-                        </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fw-bold fs-4" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Administration
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-black" href="admin">Page d'administration</a></li>
+                        <li><a class="dropdown-item text-black" href="adminRecettes">Gestion des recettes</a></li>
+                        <li><a class="dropdown-item text-black" href="adminUsers">Gestion des utilisateurs</a></li>
+                    </ul>
+                </li>
                 <?php
                     }
                 ?>
-                    <a id="connect" class="nav-link text-white fw-bold fs-4" href="logout">Se deconnecter</a>
-                    <?php
+                <a id="connect" class="nav-link text-white fw-bold fs-4" href="logout">Se deconnecter</a>
+                <?php
                     }
                     else {
                     ?>
-                        <a id = "disconnect" class="nav-link text-white fw-bold fs-4" href="login">Se connecter</a>
-                    <?php
+                <a id="disconnect" class="nav-link text-white fw-bold fs-4" href="login">Se connecter</a>
+                <?php
                     };
                     ?>
                 </li>
