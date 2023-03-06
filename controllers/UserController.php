@@ -44,11 +44,16 @@ class UserController extends UserModel {
                     exit();
                 }
                 else {
-                    header("location: index");
+                    header("location: accueil");
                     exit();
                 }
             }
         }
+
+        header("location: login&error=true&&message=Impossible de vous connecter");
+        exit();
+
+
     }
 
     // Inscription
@@ -93,4 +98,5 @@ class UserController extends UserModel {
         header("location: register&&error=0&&message=Vous avez bien été inscrit. Connectez-vous");
         exit();
     }
+
 }

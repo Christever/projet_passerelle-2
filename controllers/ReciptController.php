@@ -18,4 +18,5 @@ class ReciptController extends ReciptModel {
         $title = "Les ".$cat;
         require "views/reciptView.php";
     }
+
 }

@@ -10,10 +10,12 @@ require_once "controllers/UserController.php";
 require_once "controllers/admin/AdminController.php";
 require_once "controllers/ReciptController.php";
 
+
 // Création des controlleurs
 $login  = new UserController();
 $admin  = new AdminController();
 $recipt = new ReciptController();
+
 
 try {
     if (empty($_GET["p"])){
@@ -95,6 +97,8 @@ try {
             case "adminUsers":
                 $admin->adminUsersController();
                 break;
+            case "modal":
+
             default:
                 require "views/404.php";
                 break;

@@ -21,4 +21,11 @@ class ReciptModel extends Connect {
         $req = $this->bdd->query("SELECT * FROM recipt WHERE categorie='$cat'");
         return $req;
     }
+
+    protected  function getReciptByID($id){
+        $req = $this->bdd->prepare("SELECT * FROM recipt WHERE id=:id");
+        $req->bindParam('id', $id, PDO::PARAM_INT);
+        $req->execute();
+        return $req;
+    }
 }

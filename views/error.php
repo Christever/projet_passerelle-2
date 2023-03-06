@@ -1,6 +1,5 @@
 <?php
     $title = "erreur";
-
     ob_start();
 ?>
 
@@ -13,6 +12,5 @@
 
 <?php
     $content = ob_get_clean();
-
-    require ("base.php");
+    require ("views/base.php");
 ?>
