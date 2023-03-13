@@ -8,7 +8,7 @@ class AdminController extends AdminModel {
     public function admin(){
         // On vérifie que l'utilisateur est bien un administraur
         if (Utils::verifAdmin()){
-            $lastUsers      = $this->getLastUsers();    // On récupère les derniers utilisateurs enregistrés
+            $lastUsers      = $this->getLastUsers(3);    // On récupère les derniers utilisateurs enregistrés
             $nbUsers        = $this->getNbUsers();      // On récupère le nombre d'utilisateurs total
             $lastRecipts    = $this->getLastRecipt(3);   // On récupère les dernieres recettes enregistrées
             $nbRecipts      = $this->getNbRecipts();    // On récupère le nombre de recettes total
